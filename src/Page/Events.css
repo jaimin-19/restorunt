@@ -1,0 +1,52 @@
+/* Events.css */
+
+.events-page {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+.events-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("/image/event-bg.jpg") center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Private Events Section */
+.private-events-section {
+    background-color: #fff;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: linear-gradient(135deg, #032b43, #034c8c);
+}
+
+.newsletter-section .form-control {
+    border: none;
+    box-shadow: none;
+}
+
+.newsletter-section .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.5);
+}
+
+.newsletter-section .btn-warning {
+    background-color: #ffc107;
+    color: #032b43;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.newsletter-section .btn-warning:hover {
+    background-color: #ffca2c;
+    transform: translateY(-2px);
+}

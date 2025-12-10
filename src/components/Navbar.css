@@ -1,0 +1,177 @@
+/* ==========================================
+   TOP INFO BAR
+========================================== */
+.top-bar {
+  background: linear-gradient(90deg, #00F0FF, #FF69B4);
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 240, 255, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.top-bar small {
+  font-weight: 500;
+}
+
+/* Account Icons */
+.account-icons {
+  display: flex;
+  align-items: center;
+}
+
+.account-icons .icon {
+  text-align: center;
+  margin: 0 12px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.account-icons .icon i {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.account-icons .icon p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.account-icons .icon:hover {
+  transform: scale(1.1);
+  color: #FFD700;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+.navbar {
+  padding: 14px 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar.scrolled {
+  background: #fafafa;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .nav-link {
+  color: #1a1a2e !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #FF69B4 !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #032B43 !important;
+  margin: 0 15px;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FF69B4, #00F0FF);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF69B4 !important;
+}
+
+/* ==========================================
+   LOGO STYLING
+========================================== */
+.text-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff007f, #00c6ff);
+
+  /* Fallbacks + vendor prefixes for gradient text */
+  color: transparent;                      /* fallback */
+  background-clip: text;                   /* standard */
+  -webkit-background-clip: text;           /* Chrome, Safari */
+  -moz-background-clip: text;              /* older Firefox (may be ignored) */
+
+  -webkit-text-fill-color: transparent;    /* required for WebKit */
+ 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.text-logo:hover {
+  transform: scale(1.08);
+  text-shadow: 0 0 10px rgba(255, 0, 128, 0.6);
+}
+
+@media (max-width: 1200px) {
+  .text-logo {
+    font-size: 1.0rem;
+  }
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+@media (max-width: 992px) {
+  .account-icons {
+    display: none !important;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: none;
+  }
+
+  .navbar-logo {
+    height: 55px;
+  }
+}
+
+/* ==========================================
+   HOVER + ACTIVE STATE
+========================================== */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+  color: #FF69B4 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* ==========================================
+   STICKY EFFECT (Optional JS Hook)
+========================================== */
+.sticky-top {
+  transition: all 0.3s ease;
+}

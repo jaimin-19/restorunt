@@ -1,0 +1,117 @@
+/* ------------------------------
+   FOOTER SECTION STYLING
+------------------------------ */
+.footer-section {
+  background: linear-gradient(135deg, #032B43, #034C8C); /* rich dark teal gradient */
+  color: #f8f9fa;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Navigation Links */
+.footer-nav {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.footer-nav a:hover {
+  color: #FFD700; /* gold hover */
+  transform: translateY(-2px);
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width 0.3s;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+/* Description */
+.footer-desc {
+  font-size: 15px;
+  color: #d1d1d1;
+  line-height: 1.7;
+}
+
+/* Hours */
+.footer-hours {
+  font-weight: 600;
+  color: #FFD700;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 28px;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  background: transparent;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #FFD700;
+  color: #032B43;
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #f8f9fa;
+  font-size: 24px;
+  margin: 0 12px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+  transform: scale(1.2);
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 13px;
+  color: #bbb;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    margin: 8px 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

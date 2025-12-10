@@ -1,0 +1,97 @@
+/* ---------- Base Section ---------- */
+.food-menu-section {
+  background-color: #fffaf3;
+  font-family: "Poppins", sans-serif;
+}
+
+.title-text {
+  color: #2b2b2b;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.title-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 80px;
+  height: 3px;
+  background-color: #c59d5f;
+  transform: translateX(-50%);
+}
+
+/* ---------- Search Bar ---------- */
+.food-search-bar {
+  max-width: 350px;
+  border-radius: 30px;
+  border: 2px solid #c59d5f;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.food-search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(197, 157, 95, 0.4);
+  border-color: #c59d5f;
+}
+
+/* ---------- Food Card ---------- */
+.food-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.food-card:hover .food-img img {
+  transform: scale(1.1);
+  filter: brightness(0.9);
+}
+
+/* ---------- Food Image ---------- */
+.food-img {
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+}
+
+.food-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+/* ---------- Food Title ---------- */
+.food-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  transition: color 0.3s ease;
+}
+
+.food-card:hover .food-title {
+  color: #c59d5f;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767px) {
+  .food-card {
+    padding: 15px;
+  }
+  .food-img {
+    height: 130px;
+  }
+}

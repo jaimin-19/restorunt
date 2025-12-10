@@ -1,0 +1,21 @@
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+h3 {
+  color: #333;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}

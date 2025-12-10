@@ -1,0 +1,71 @@
+/* Background and Layout */
+.food-detail-section {
+  background-color: #fffaf5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Food Title */
+.food-detail-section h2 {
+  color: #2b2b2b;
+  letter-spacing: 0.5px;
+}
+
+/* Price Tag */
+.price-tag {
+  color: #c59d5f;
+  font-weight: 700;
+}
+
+/* Counter Buttons */
+.counter-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.counter-btn:hover {
+  background-color: #c59d5f;
+  color: white;
+  border-color: #c59d5f;
+}
+
+/* Order Now Button */
+.btn-order {
+  background-color: #c59d5f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-order:hover {
+  background-color: #b3874f;
+  transform: translateY(-2px);
+}
+
+/* Food Image Styling */
+.food-image-wrapper {
+  overflow: hidden;
+}
+
+.food-image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.food-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .food-detail-section {
+    text-align: center;
+  }
+  .food-image-wrapper {
+    margin-top: 20px;
+  }
+}
